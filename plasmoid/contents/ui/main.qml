@@ -61,11 +61,11 @@ Rectangle {
         property int cpuHighTemp:   plasmoid.configuration.cpuHighTemp
         property int cpuCritTemp:   plasmoid.configuration.cpuCritTemp
 
-        property string distroName: "tux"
-        property string distroId: "tux"
-        property string distroVersion: ""
-        property string kernelName: ""
-        property string kernelVersion: ""
+        //property string distroName: "tux"
+        //property string distroId: "tux"
+        //property string distroVersion: ""
+        //property string kernelName: ""
+        //property string kernelVersion: ""
 
         property int direction: Qt.LeftToRight
 
@@ -107,12 +107,12 @@ Rectangle {
             }
         }
 
-        Component.onCompleted: {
-            Code.getDistroInfo(function(info) {
-                distroName = info['name']
-                distroId = info['id']
-                distroVersion = info['version']
-            }, this);
+        //Component.onCompleted: {
+        //    Code.getDistroInfo(function(info) {
+        //        distroName = info['name']
+        //        distroId = info['id']
+        //        distroVersion = info['version']
+        //    }, this);
 
             Code.getKernelInfo(function(info){
                 kernelName = info['name']
