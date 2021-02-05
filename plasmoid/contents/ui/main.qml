@@ -114,11 +114,11 @@ Rectangle {
         //        distroVersion = info['version']
         //    }, this);
 
-            Code.getKernelInfo(function(info){
-                kernelName = info['name']
-                kernelVersion = info['version']
-            }, this);
-        }
+        //   Code.getKernelInfo(function(info){
+        //        kernelName = info['name']
+        //        kernelVersion = info['version']
+        //    }, this);
+        //}
     }
 
     ListModel {
